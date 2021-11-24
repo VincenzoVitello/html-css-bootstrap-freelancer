@@ -6,11 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Bootstrap Freelancer</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ms_nav">
+            <div class="container">
+              <a class="navbar-brand" href="#">Start Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link ms_text_white" aria-current="page" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
     <!-- Sezione jumbo -->
     <section class="ms_section_green py-3">
         <div class="container">
@@ -28,35 +51,95 @@
     </section>
     <main>
         <!-- sezione portfolio -->
-        <br>
-        <section class="py3">
+        <section class="py-3">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2>Start Bootstrap</h2>
-                        <div class="ms_star">
+                        <div class="ms_star ms_portfolio_star">
                             <i class="bi bi-star-fill"></i>
                         </div>
                     </div>
                 </div>
                 <div class="row g-2">
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="p-3 ms_portfolio_item"></div>
+                        <div class="p-3 ms_portfolio_item">
+                            <img src="img/cabin.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="p-3 ms_portfolio_item"></div>
+                        <div class="p-3 ms_portfolio_item">
+                            <img src="img/cake.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="p-3 ms_portfolio_item"></div>
+                        <div class="p-3 ms_portfolio_item">
+                            <img src="img/circus.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="p-3 ms_portfolio_item"></div>
+                        <div class="p-3 ms_portfolio_item">
+                            <img src="img/game.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="p-3 ms_portfolio_item"></div>
+                        <div class="p-3 ms_portfolio_item">
+                            <img src="img/safe.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="p-3 ms_portfolio_item"></div>
+                        <div class="p-3 ms_portfolio_item">
+                            <img src="img/submarine.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sezione about -->
+        <section class="ms_section_green py-3">
+            <div class="container">
+                <div class="row text-center">
+                    <h2>About</h2>
+                    <div class="ms_star">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, fugiat consequuntur, reprehenderit voluptate quisquam dolorum doloribus optio iste earum inventore quaerat cum ducimus sunt atque ad pariatur dolore neque blanditiis?
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, fugiat consequuntur, reprehenderit voluptate quisquam dolorum doloribus optio iste earum inventore quaerat cum ducimus sunt atque ad pariatur dolore neque blanditiis?
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sezione contatti -->
+        <section class="py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-8 col-md-6 mx-auto text-center">
+                        <h2>About</h2>
+                        <div class="ms_portfolio_star">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="input-group input-group-lg pt-5">
+                            <span class="ms_input_border" id="inputGroup-sizing-lg">Name</span>
+                            <input type="text" class="form-control  ms_input_border" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                        <div class="input-group">
+                            <span class="ms_input_border">Email Address</span>
+                            <textarea class="form-control  ms_input_border" aria-label="With textarea"></textarea>
+                          </div>
+                        <div class="input-group input-group-lg">
+                            <span class="ms_input_border" id="inputGroup-sizing-lg">Phone Number</span>
+                            <input type="text" class="form-control  ms_input_border" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="ms_input_border" id="inputGroup-sizing-lg">Message</span>
+                            <input type="text" class="form-control  ms_input_border" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                        <div class="col-12 py-2 my-5 ms_border-top text-start">
+                            <button class="btn ms_btn_green" type="submit">Send</button>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -64,7 +147,34 @@
     </main>
      
     <footer>
-
+        <div class="container-fluid ms_footer_bg py-3">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center">
+                    <h2>Location</h2>
+                    <p>2215 John Daniel Drive Clark, MO 54243</p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h2>Around the Web</h2>
+                    <div class="py-2">
+                        <i class="bi bi-facebook ms_icon_style"></i>
+                        <i class="bi bi-google ms_icon_style"></i>
+                        <i class="bi bi-twitter ms_icon_style"></i>
+                        <i class="bi bi-linkedin ms_icon_style"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h2>About Freelancer</h2>
+                    <p>Freelance is a free to use, opern source Bootstrap theme created by <span class="ms_text_green">Start Bootstrap</span>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center py-5 ms_copy_bg">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copywright <i class="fa-solid fa-copyright"></i> your website 2019. </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
